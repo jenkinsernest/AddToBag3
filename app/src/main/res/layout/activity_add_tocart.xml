@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddTocartActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:src="@drawable/btn_backward"
+            android:id="@+id/bac"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bottonpurple"
+            android:layout_alignParentRight="true"
+            android:padding="7dp"
+            android:layout_margin="4dp"
+            android:id="@+id/cart"
+
+            >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:src="@drawable/bag"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/bag"
+            />
+
+
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/txtcartcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:text="40"
+           android:layout_gravity="center_vertical"
+
+             />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        >
+    <LinearLayout
+android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <ImageView
+          android:id="@+id/primage"
+          android:layout_width="250dp"
+          android:layout_height="200dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/product_name"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="#111"
+                android:layout_margin="2dp"
+                android:text="Folic Acid "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_margin="2dp"
+                android:id="@+id/spec"
+                android:textSize="15sp"
+                android:textColor="#111"
+                android:textStyle="bold"
+                android:text="Soft Gel - 650mg "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="20dp"
+    >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/rectanglepurple"
+            android:padding="5dp"
+            android:id="@+id/increase"
+            >
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/add"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="#fff"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/add5" />
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/quan"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="#111"
+                android:textSize="18sp"
+                />
+
+            <ImageView
+                android:id="@+id/minus"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="#fff"
+                android:src="@drawable/minus3"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+    <TextView
+        android:id="@+id/packs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/increase"
+        android:layout_alignRight="@+id/increase"
+        android:layout_marginEnd="-61dp"
+        android:layout_marginRight="-61dp"
+        android:text="Pack(s)"
+        android:layout_centerVertical="true"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="15sp" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/txtprprice"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="\u20A6 300"
+            android:textColor="#000"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+</RelativeLayout>
+
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="PRODUCTS DETAILS"
+         android:textStyle="bold"
+         android:textSize="15dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:layout_marginTop="30dp"
+         />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:src="@drawable/pills"
+                    android:layout_width="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="50dp"/>
+
+                <LinearLayout
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/name"
+                        android:textSize="13sp"
+                        android:textColor="#111"
+
+                        android:text="PACK SIZE"
+                        android:paddingStart="10dp"
+                        android:paddingLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"/>
+                    <TextView
+                        android:textColor="#000"
+                        android:textStyle="bold"
+
+                        android:textSize="12sp"
+                        android:text="3*10"
+                        android:paddingStart="10dp"
+                        android:paddingLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:src="@drawable/scan"
+                    android:layout_width="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="40dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textSize="13sp"
+                        android:textColor="#111"
+
+                        android:text="Product TO"
+                        android:paddingStart="10dp"
+                        android:paddingLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"/>
+                    <TextView
+                        android:textColor="#000"
+                        android:textStyle="bold"
+android:layout_gravity="center_vertical"
+                        android:textSize="12sp"
+                        android:text="ABDXNAHWB"
+                        android:paddingStart="10dp"
+                        android:paddingLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_gravity="start"
+android:layout_marginLeft="10dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@drawable/pack"
+                android:layout_width="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="30dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+                <TextView
+                    android:textSize="13sp"
+                    android:textColor="#111"
+
+                    android:text="DESPENSED IN"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"/>
+                <TextView
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="12sp"
+                    android:text="Packs"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottonpurple"
+            android:id="@+id/addtocartbtn"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="5dp"
+            android:layout_marginBottom="6dp"
+            >
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:src="@drawable/bag"
+android:layout_centerVertical="true"
+                android:id="@+id/bag2"
+                android:layout_marginLeft="50dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:text="Add to bag"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    
+
+</LinearLayout>

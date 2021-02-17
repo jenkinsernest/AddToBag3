@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:src="@drawable/btn_backward"
+            android:id="@+id/bac"
+            android:layout_marginLeft="20dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:src="@drawable/bag"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/bag"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/bag"
+            android:layout_alignRight="@+id/bag"
+            android:layout_marginEnd="-38dp"
+            android:layout_marginRight="-38dp"
+            android:text="Bag"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+android:gravity="center_vertical"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/txtcartcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:padding="7dp"
+        android:text="40"
+        android:background="@drawable/botton2"
+        android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#444"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="5dp"
+        android:text="Tap on items to view delete and add options"
+        android:background="@drawable/rectanglesearch"
+
+        />
+</LinearLayout>
